@@ -1,0 +1,29 @@
+body{
+  
+  font-size:16px;
+  color: #000;
+  background-image:url('../Images/Download1.jpg');
+  font-family: 'Oxygen', serif;
+  font-size : 18px;
+  font-weight: bold;
+}
+#logo-img
+{
+   background: url('../Images/stack-of-money-clipart.jpg') no-repeat;
+   width:280px;
+   height:165px; 
+   margin: 18px 15px 60px 0px;
+}
+#header-nav {
+  
+  background-color:#61122f;
+  border-radius:0;
+  border:0;  
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}

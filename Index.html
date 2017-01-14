@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content = "IE=edge">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1"> <!--to tell the phone that you've taken care of sizing -->
+ 	<title>David Chu's Cina Bistro</title>
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/styles.css">
+ 	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lora">      
+ </head>
+<body>
+  <header>
+  	<nav id="header-nav" class="navbar navbar-default"> <!-- base class (navbar) and additional class that adds extra using the base class -->
+  	 <div class="container"> <!-- this changes its width based on browser width, unlike "container-fluid" which streaches to fill it out-->
+  	  <div class="navbar-header"> <!-- A wrapper class that other classes depend on to be in this position so that they work properly, brand & toggle (menu-bar toggle) are grouped together for better mobile display-->
+  	 	<a href="Index.html" class="pull-left visible-lg visible-md">
+  	 	 <div id="logo-img" alt="Logo Image"></div>
+  	 	</a>
+  	 	<div class="navbar-brand">
+  	 	  <a href="Index.html"><h1>David Chu's China Bistro</h1></a>
+  	 	  <p>
+  	 	  	<img src="Images/certified.png" alt="Kosher Certification">
+  	 	  	<span>Kosher Certified</span>
+  	 	  </p>
+  	 	</div> 
+  	 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav-yours" aria-expanded="false"> 
+  	 	 <!--the "data-" are HTML5 APIs that allow JS plugins to get in attributes (such as pulling the menubar up & down) in a standard way-->
+  	 		<span class="sr-only">Toggle navigation</span>
+  	 		<span class="icon-bar"></span> <!-- those bars inside the button-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+  	 	</button>	
+  	  </div>	
+  	  <!--the menu items are adressed to the target of the button above and indicated so that the collapse in bootstrap.js knows where the menu items are, with some required classes. Does it matter if its not in the navbar header??-->
+      <div id="collapsable-nav-yours" class="collapse navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav navbar-right"> <!--nav&navbar-nav tell that it'll be a component of the navigation bar--> 
+          <!-- nav-bar right means - still in the nav bar but pulled to the right-->
+          <!--glyphicons are available by default with bootstrap-->
+          <li>
+            <a href="menu-categories.html">
+            <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a> <!--on small screen the break will disappear and  word&icon won't be top&bottom but next to eachother-->
+          </li>
+          <li>
+            <a href="#"> 
+            <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+          </li>
+          <li>
+            <a href="#">
+            <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+          </li>
+          <li id="phone" class="hidden-xs"> 
+            <!--we want this hidden from the menu at small size because it'll be displayed across the nav-bar, hidden for large & medium sizes-->
+            <a href="tel:251-910-542582">  <!--very important href because if on phone clicking it will be recognized and callable!-->
+               <span>251-910-542582</span></a><div> * We Deliver</div>
+          </li>
+
+        </ul>
+      </div>    
+      
+  	 </div>	
+  	</nav>
+  </header>
+   
+   
+
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script type="js/bootstrap.min.js"></script>
+   <script type="js/script.js"></script>
+</body>    

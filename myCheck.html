@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <title> Write a Check </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/checkStyle.css">
+
+    
+</head>
+
+<body>
+<nav id="header-nav" class="navbar navbar-default"> <!-- base class (navbar) and additional class that adds extra using the base class -->
+  	 <div class="container"> <!-- this changes its width based on browser width, unlike "container-fluid" which streaches to fill it out-->
+  	  <div class="navbar-header"> <!-- A wrapper class that other classes depend on to be in this position so that they work properly, brand & toggle (menu-bar toggle) are grouped together for better mobile display-->
+  	 	<a href="myCheck.html" class ="pull-left visible-lg visible-md">
+  	 	 <div id="logo-img" alt="LogoImage"></div>
+  	 	</a>
+  	 	<div class="navbar-brand">
+  	 	  <a href="myCheck.html"><h1>Write yourself a Check</h1></a>
+  	 	  <p>
+  	 	  	<img src="Images/thumbsup-gold.png" alt="Thumbs Up">
+  	 	  	<span>You Deserve it!!</span>
+  	 	  </p>
+  	 	</div> 
+  	   </div>
+  	 </div>
+</nav>
+
+<form>
+   Payed To: <br>
+   First Name
+   <input type="text" name = "First name" required><br>
+   Last Name 
+   <input type="text" name = "Last name" required><br>
+   Amount payed <br>
+   In number: 
+   <input type="number" min="1" step = "any" name = "Amount of money" required><br>
+   In Words: 
+   <input type="text" name = "amount in words" required><br>
+   Signature?!! <br><br>
+   Memo : <br>
+   <input type="text" name = "memo"><br>
+   Date : <br>
+   <input type="date" step = 7 min= 2014-09-08 name = "date"> <br> 
+
+</form>
+
+</body>
